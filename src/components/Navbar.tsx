@@ -35,10 +35,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
           
-          {/* Brand Logo & Name (Styled like Orvex Health Logo) */}
+          {/* Brand Logo & Name (Healthy Kidney Logo) */}
           <a href="#" className="flex items-center gap-3 shrink-0 group">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#845FA6] to-[#6E4990] flex items-center justify-center text-white shadow-sm border border-[#CCA762]/50 group-hover:scale-105 transition-transform">
-              <span className="font-serif font-bold text-lg text-[#F5E9CE]">CK</span>
+            <div className="h-11 sm:h-12 w-auto flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+              <img
+                src="/images/logo-healthy-kidney.png"
+                alt="Healthy Kidney - Dr. Chandini Kotha"
+                className="h-11 sm:h-12 w-auto object-contain drop-shadow-sm"
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -50,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                   Gold Medalist
                 </span>
               </div>
-              <p className="text-[11px] text-[#845FA6] font-medium tracking-wide">
+              <p className="text-[11px] text-[#845FA6] font-bold tracking-wide">
                 DM Nephrologist • DNB General Medicine
               </p>
             </div>

@@ -8,41 +8,45 @@ interface AboutDoctorProps {
 
 export const AboutDoctor: React.FC<AboutDoctorProps> = ({ onOpenBooking }) => {
   return (
-    <section id="about" className="py-16 sm:py-24 bg-[#FAF7FC] relative overflow-hidden">
+    <section id="about" className="py-8 sm:py-12 bg-[#FAF7FC] relative overflow-hidden">
       {/* 🫘 Kidney Care & Protection Visual Background */}
       <KidneyBackground />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           
           {/* Left Column: Authentic 1-on-1 Kidney Consultation Image */}
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden border-4 border-white shadow-orvex-card bg-white group">
-              <img
-                src="/images/dr-chandini-consultation.png"
-                alt="Dr. Chandini Kotha explaining kidney anatomy and treatment to a patient"
-                className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
-                loading="lazy"
-              />
+              <div className="relative">
+                <img
+                  src="/images/dr-chandini-consultation.png"
+                  alt="Dr. Chandini Kotha explaining kidney anatomy and treatment to a patient"
+                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                {/* 🏅 Telangana State Gold Medalist Badge (Clean Top-Left Inset, Zero Text Overlap) */}
+                <div className="absolute top-4 left-4 z-20 bg-gradient-to-br from-[#845FA6] via-[#754E97] to-[#5C387D] text-white rounded-2xl p-3 sm:p-3.5 shadow-xl max-w-xs border border-[#CCA762]/70 backdrop-blur-md">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
+                      <Award className="w-5 h-5 text-[#F5E9CE]" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-[#F5E9CE] leading-tight">Telangana Gold Medalist</p>
+                      <p className="text-[11px] text-[#E8DFF2] font-medium">Nephrology Excellence (2022)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Unhurried 1-on-1 Patient Education Bar */}
               <div className="p-4 bg-white border-t border-[#E8DFF2]">
-                <p className="text-xs font-semibold text-[#26212E] flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0" />
+                <p className="text-xs font-bold text-black flex items-center gap-2">
+                  <CheckCircle2 className="w-4.5 h-4.5 text-[#845FA6] shrink-0" />
                   <span>Unhurried 1-on-1 patient education, clear test explanations & diet guidance</span>
                 </p>
-              </div>
-            </div>
-
-            {/* Decorative Gold & Purple Accent Card (Orvex Style) */}
-            <div className="hidden sm:block absolute -bottom-5 -left-5 bg-gradient-to-br from-[#845FA6] via-[#754E97] to-[#5C387D] text-white rounded-2xl p-4.5 shadow-xl max-w-xs border border-[#CCA762]/50 z-20">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
-                  <Award className="w-5 h-5 text-[#F5E9CE]" />
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-[#F5E9CE]">Telangana Gold Medalist</p>
-                  <p className="text-[11px] text-[#E8DFF2]">Nephrology Excellence (2022)</p>
-                </div>
               </div>
             </div>
           </div>
@@ -70,22 +74,22 @@ export const AboutDoctor: React.FC<AboutDoctorProps> = ({ onOpenBooking }) => {
 
             {/* Core Pillars */}
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-4.5 rounded-2xl bg-white border-2 border-[#E8DFF2] shadow-orvex-card">
-                <div className="flex items-center gap-2 font-extrabold text-black text-sm mb-1.5">
-                  <ShieldCheck className="w-5 h-5 text-[#845FA6]" />
-                  Dual Medical Foundation
+              <div className="p-5 rounded-2xl bg-white border-2 border-[#E8DFF2] shadow-orvex-card flex flex-col justify-start">
+                <div className="flex items-center gap-2 font-extrabold text-black text-sm mb-2">
+                  <ShieldCheck className="w-5 h-5 text-[#845FA6] shrink-0" />
+                  <span>Dual Medical Foundation</span>
                 </div>
-                <p className="text-xs sm:text-sm text-black font-medium leading-relaxed">
+                <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
                   Her DNB in General Medicine ensures diabetes, heart health, and blood pressure are treated in complete harmony with the kidneys.
                 </p>
               </div>
 
-              <div className="p-4.5 rounded-2xl bg-white border-2 border-[#E8DFF2] shadow-orvex-card">
-                <div className="flex items-center gap-2 font-extrabold text-black text-sm mb-1.5">
-                  <HeartHandshake className="w-5 h-5 text-[#845FA6]" />
-                  Dedicated 1-on-1 Care
+              <div className="p-5 rounded-2xl bg-white border-2 border-[#E8DFF2] shadow-orvex-card flex flex-col justify-start">
+                <div className="flex items-center gap-2 font-extrabold text-black text-sm mb-2">
+                  <HeartHandshake className="w-5 h-5 text-[#845FA6] shrink-0" />
+                  <span>Dedicated 1-on-1 Care</span>
                 </div>
-                <p className="text-xs sm:text-sm text-black font-medium leading-relaxed">
+                <p className="text-xs sm:text-[13px] text-black font-medium leading-relaxed">
                   In her private practice, consultations are never rushed. Every patient receives direct attention and customized dietary protocols.
                 </p>
               </div>

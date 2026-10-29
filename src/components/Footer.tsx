@@ -15,12 +15,16 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-11 h-11 rounded-2xl bg-white text-[#845FA6] flex items-center justify-center font-serif font-bold text-lg shadow-sm border border-[#CCA762]">
-                CK
+              <div className="w-12 h-12 rounded-2xl bg-white p-1 flex items-center justify-center shadow-sm border border-[#CCA762] shrink-0">
+                <img
+                  src="/images/logo-healthy-kidney.png"
+                  alt="Healthy Kidney - Dr. Chandini Kotha"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="font-serif font-bold text-xl text-white">Dr. Chandini Kotha</h3>
-                <p className="text-xs text-[#F5E9CE] font-medium tracking-wide">
+                <p className="text-xs text-[#F5E9CE] font-bold tracking-wide">
                   DM Nephrologist • DNB General Medicine
                 </p>
               </div>

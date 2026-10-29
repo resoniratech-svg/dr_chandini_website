@@ -35,14 +35,14 @@ export const WhenToConsult: React.FC<WhenToConsultProps> = ({ onOpenBooking }) =
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/50 to-[#FAF7FC] relative overflow-hidden border-y border-[#E8DFF2]">
+    <section className="py-8 sm:py-12 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/50 to-[#FAF7FC] relative overflow-hidden border-y border-[#E8DFF2]">
       {/* 🫘 Kidney Care & Protection Visual Background */}
       <KidneyBackground />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E8DFF2] shadow-orvex-card">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             {/* Left Column: Image & Guidance */}
             <div className="lg:col-span-5">

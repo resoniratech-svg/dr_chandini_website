@@ -78,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   };
 
   return (
-    <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9] to-[#FAF7FC] overflow-hidden">
+    <section className="relative pt-20 pb-12 lg:pt-28 lg:pb-14 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9] to-[#FAF7FC] overflow-hidden">
       
       {/* Decorative Orvex-Style Soft Lavender Aura & Delicate Gold Wave */}
       <div className="absolute top-10 right-0 w-[550px] h-[550px] bg-[#E8DFF2]/50 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -102,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Hero Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-8 lg:mb-10">
           
           {/* Left Column: Copy & Value Proposition */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">

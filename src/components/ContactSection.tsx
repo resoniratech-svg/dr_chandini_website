@@ -23,7 +23,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialService =
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
+    <section id="contact" className="py-8 sm:py-12 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
       {/* 🫘 Kidney Care & Protection Visual Background */}
       <KidneyBackground />
 

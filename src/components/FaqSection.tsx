@@ -41,14 +41,14 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faqs" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
+    <section id="faqs" className="py-8 sm:py-12 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
       {/* 🫘 Kidney Care & Protection Visual Background */}
       <KidneyBackground />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-8">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-100 text-plum-700 text-xs font-bold uppercase tracking-wider mb-3 border border-purple-200">
             <HelpCircle className="w-3.5 h-3.5 text-plum-600" />
             Patient Questions & Clarity
@@ -76,7 +76,7 @@ export const FaqSection: React.FC = () => {
               >
                 <button
                   onClick={() => toggle(index)}
-                  className="w-full py-4.5 px-6 flex items-center justify-between text-left focus:outline-none"
+                  className="w-full py-4 px-6 flex items-center justify-between text-left focus:outline-none"
                   aria-expanded={isOpen}
                 >
                   <span className="text-base sm:text-lg font-extrabold text-black pr-4">

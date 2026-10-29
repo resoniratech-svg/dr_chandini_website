@@ -59,14 +59,14 @@ export const SymptomsSection: React.FC<SymptomsSectionProps> = ({ onOpenBooking 
   ];
 
   return (
-    <section id="symptoms" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/50 to-[#FAF7FC] relative overflow-hidden">
+    <section id="symptoms" className="py-8 sm:py-12 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/50 to-[#FAF7FC] relative overflow-hidden">
       {/* 🫘 Kidney Care & Protection Visual Background */}
       <KidneyBackground />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F4EEF9] text-[#845FA6] text-xs font-bold uppercase tracking-wider mb-3 border border-[#E8DFF2]">
             <AlertCircle className="w-3.5 h-3.5 text-[#845FA6]" />
             Early Warning Signs

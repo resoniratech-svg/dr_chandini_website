@@ -95,14 +95,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
   ];
 
   return (
-    <section id="services" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
+    <section id="services" className="py-8 sm:py-12 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
       {/* 🫘 Kidney Care & Protection Visual Background */}
       <KidneyBackground />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-7 sm:mb-8">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F4EEF9] text-[#845FA6] text-xs font-bold uppercase tracking-wider mb-3 border border-[#E8DFF2]">
               <Stethoscope className="w-3.5 h-3.5 text-[#845FA6]" />
@@ -122,7 +122,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         </div>
 
         {/* Spotlight Visual Feature Banner with 3D Kidneys Image */}
-        <div className="mb-12 rounded-3xl bg-gradient-to-r from-[#26212E] via-[#38264A] to-[#26212E] text-white p-6 sm:p-10 shadow-elevated border border-[#845FA6]/30 relative overflow-hidden">
+        <div className="mb-8 rounded-3xl bg-gradient-to-r from-[#26212E] via-[#38264A] to-[#26212E] text-white p-6 sm:p-10 shadow-elevated border border-[#845FA6]/30 relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Banner Left Copy */}
@@ -168,19 +168,15 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               </div>
             </div>
 
-            {/* Banner Right Image (3D Glowing Kidneys) */}
+            {/* Banner Right Image (Best Urologist & Kidney Care in Karimnagar) */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl bg-plum-950/40 p-2 max-w-xs sm:max-w-sm group">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-white/30 shadow-2xl bg-white p-2 max-w-xs sm:max-w-sm group">
                 <img
-                  src="/images/kidney-care-3d.png"
-                  alt="3D Glowing Kidney Medical Care"
-                  className="w-full h-auto object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  src="/images/urologist-karimnagar.jpg"
+                  alt="Best Urologist in Karimnagar - Advanced Urological & Kidney Care"
+                  className="w-full h-auto object-cover rounded-xl group-hover:scale-[1.02] transition-transform duration-500 shadow-sm"
                   loading="lazy"
                 />
-                <div className="absolute bottom-4 inset-x-4 bg-purple-950/80 backdrop-blur-md rounded-xl p-2.5 border border-purple-500/30 text-center">
-                  <p className="text-[11px] font-bold text-gold-light">Evidence-Based Nephrology</p>
-                  <p className="text-[10px] text-purple-200">Direct Patient Care in Karimnagar</p>
-                </div>
               </div>
             </div>
 

@@ -8,14 +8,14 @@ interface TransplantDialysisSectionProps {
 
 export const TransplantDialysisSection: React.FC<TransplantDialysisSectionProps> = ({ onOpenBooking }) => {
   return (
-    <section id="transplant" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
+    <section id="transplant" className="py-8 sm:py-12 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
       {/* 🫘 Kidney Care & Protection Visual Background */}
       <KidneyBackground />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-9">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F4EEF9] text-[#845FA6] text-xs font-semibold uppercase tracking-wider mb-3 border border-[#E8DFF2]">
             <HeartHandshake className="w-3.5 h-3.5 text-[#845FA6]" />
             Advanced Renal Care
@@ -30,8 +30,8 @@ export const TransplantDialysisSection: React.FC<TransplantDialysisSectionProps>
         </div>
 
         {/* Visual Protection Banner with Shield Graphic */}
-        <div className="mb-12 bg-white rounded-3xl p-6 sm:p-8 border border-[#E8DFF2] shadow-orvex-card">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="mb-8 bg-white rounded-3xl p-6 sm:p-8 border border-[#E8DFF2] shadow-orvex-card">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             {/* Left: Protective Kidney Shield Image */}
             <div className="lg:col-span-5 flex justify-center">
