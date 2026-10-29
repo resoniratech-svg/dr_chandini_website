@@ -12,6 +12,7 @@ import {
   CheckCircle2,
   Calendar
 } from 'lucide-react';
+import { KidneyBackground } from './KidneyBackground';
 
 interface ServicesSectionProps {
   onSelectService: (serviceName: string) => void;
@@ -94,8 +95,11 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
   ];
 
   return (
-    <section id="services" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-white to-[#FAF7FC] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
+      {/* 🫘 Kidney Care & Protection Visual Background */}
+      <KidneyBackground />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-12">
@@ -104,10 +108,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               <Stethoscope className="w-3.5 h-3.5 text-[#845FA6]" />
               Comprehensive Clinical Services
             </div>
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#26212E]">
+            <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-black">
               Specialized Kidney Care & Consultation
             </h2>
-            <p className="mt-3 text-base text-[#544D5E]">
+            <p className="mt-3 text-base sm:text-lg text-black font-medium">
               Dr. Chandini Kotha delivers evidence-based nephrology evaluations, blending deep general medicine expertise with advanced kidney sub-specialization.
             </p>
           </div>
@@ -216,19 +220,19 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
 
                   {/* Service Body Content */}
                   <div className="p-5">
-                    <h3 className="text-base font-bold text-medical-dark group-hover:text-plum-700 transition-colors leading-snug">
+                    <h3 className="text-base sm:text-lg font-extrabold text-black group-hover:text-[#845FA6] transition-colors leading-snug">
                       {service.title}
                     </h3>
 
-                    <p className="mt-2 text-xs text-medical-body leading-relaxed">
+                    <p className="mt-2 text-xs sm:text-sm text-black font-medium leading-relaxed">
                       {service.summary}
                     </p>
 
                     <div className="mt-3.5 pt-3 border-t border-purple-50">
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-plum-800 mb-1.5">
+                      <p className="text-[10px] font-extrabold uppercase tracking-wider text-[#845FA6] mb-1.5">
                         Clinical Focus:
                       </p>
-                      <ul className="space-y-1 text-[11px] text-[#26212E] font-medium">
+                      <ul className="space-y-1 text-xs text-black font-semibold">
                         {service.keyFocus.slice(0, 3).map((focus, i) => (
                           <li key={i} className="flex items-center gap-1.5">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#845FA6] shrink-0"></span>

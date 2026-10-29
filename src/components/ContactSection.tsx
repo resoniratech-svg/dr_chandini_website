@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, MessageCircle, MapPin, CheckCircle, Send, Award } from 'lucide-react';
+import { KidneyBackground } from './KidneyBackground';
 
 interface ContactSectionProps {
   initialService?: string;
@@ -22,8 +23,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialService =
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-white to-[#FAF7FC] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
+      {/* 🫘 Kidney Care & Protection Visual Background */}
+      <KidneyBackground />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
@@ -33,12 +37,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialService =
               Direct Patient Desk
             </span>
 
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-medical-dark mt-3 leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-black mt-3 leading-tight">
               Book Your Private Consultation
             </h2>
 
-            <p className="mt-3 text-sm text-medical-body leading-relaxed mb-6">
-              Consult directly with <strong>Dr. Chandini Kotha</strong> for expert kidney evaluation, dialysis planning, or transplant workup in Karimnagar. We value your time with dedicated, scheduled appointments.
+            <p className="mt-3 text-sm sm:text-base text-black font-medium leading-relaxed mb-6">
+              Consult directly with <strong className="text-black font-bold">Dr. Chandini Kotha</strong> for expert kidney evaluation, dialysis planning, or transplant workup in Karimnagar. We value your time with dedicated, scheduled appointments.
             </p>
 
             {/* Clinic Environment Image */}
@@ -68,11 +72,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialService =
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-[11px] font-bold text-[#7E768A] uppercase tracking-wider">Direct Consultation Line</p>
-                  <p className="text-base sm:text-lg font-bold text-[#26212E] group-hover:text-[#845FA6] transition-colors">
+                  <p className="text-[11px] font-extrabold text-black uppercase tracking-wider">Direct Consultation Line</p>
+                  <p className="text-base sm:text-lg font-extrabold text-black group-hover:text-[#845FA6] transition-colors">
                     +91 9247531304
                   </p>
-                  <p className="text-xs text-[#845FA6] font-semibold">Click to Call Directly</p>
+                  <p className="text-xs text-[#845FA6] font-bold">Click to Call Directly</p>
                 </div>
               </a>
 
@@ -87,8 +91,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialService =
                   <MessageCircle className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-[11px] font-bold text-[#7E768A] uppercase tracking-wider">Instant WhatsApp Booking</p>
-                  <p className="text-sm sm:text-base font-bold text-[#26212E] group-hover:text-emerald-700 transition-colors">
+                  <p className="text-[11px] font-extrabold text-black uppercase tracking-wider">Instant WhatsApp Booking</p>
+                  <p className="text-sm sm:text-base font-extrabold text-black group-hover:text-emerald-700 transition-colors">
                     Chat on WhatsApp (9247531304)
                   </p>
                   <p className="text-xs text-emerald-600 font-semibold">Send Reports & Confirm Slot</p>

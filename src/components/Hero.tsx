@@ -87,7 +87,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       {/* Delicate Gold Wave Arc */}
       <div className="absolute top-24 left-1/4 w-[600px] h-[300px] border-t-2 border-[#CCA762]/30 rounded-full transform -rotate-12 pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* 🫘 Full Complete Screen 3D Kidney Care & Protection Visual Background (Hands Shielding Healthy Kidneys) */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none select-none z-0 overflow-hidden">
+        <img
+          src="/images/hero-kidney-protection-fullscreen.png"
+          alt="Kidney Care & Protection - Preserving Natural Kidney Function"
+          aria-hidden="true"
+          className="w-full h-full object-cover object-center opacity-50 lg:opacity-60 transition-opacity"
+        />
+        {/* Soft atmospheric gradient wash ensuring headline text, doctor credentials & CTA buttons stay 100% crisp & legible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF7FC]/65 via-[#FAF7FC]/25 to-[#FAF7FC]/55 pointer-events-none" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12">
@@ -110,10 +122,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </h1>
 
             {/* Doctor Subhead */}
-            <div className="mt-2.5 flex flex-wrap items-center gap-2 text-sm sm:text-base font-semibold text-[#845FA6]">
-              <span className="font-bold text-[#26212E]">Dr. Chandini Kotha</span>
+            <div className="mt-2.5 flex flex-wrap items-center gap-2 text-sm sm:text-base font-bold text-[#845FA6]">
+              <span className="font-extrabold text-black">Dr. Chandini Kotha</span>
               <span className="text-[#CCA762]">•</span>
-              <span className="text-[#544D5E] font-medium text-xs sm:text-base">DM Nephrology | DNB General Medicine</span>
+              <span className="text-black font-bold text-xs sm:text-base">DM Nephrology | DNB General Medicine</span>
             </div>
 
             {/* 📱 MOBILE HERO SLIDER (Visible on Mobile First Screen, Full Uncropped Images) */}
@@ -204,8 +216,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
 
             {/* Core Value Paragraph */}
-            <p className="mt-2 lg:mt-4 text-sm sm:text-base md:text-lg text-[#544D5E] leading-relaxed max-w-xl">
-              We help patients understand their kidney health and focus on what matters most — <strong className="text-[#845FA6] font-semibold">Preserving Natural Kidney Function.</strong>
+            <p className="mt-2 lg:mt-4 text-base sm:text-lg md:text-xl text-black font-semibold leading-relaxed max-w-xl">
+              We help patients understand their kidney health and focus on what matters most — <strong className="text-[#845FA6] font-extrabold">Preserving Natural Kidney Function.</strong>
             </p>
 
             {/* Primary Action Buttons */}
@@ -224,7 +236,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 href="https://wa.me/919247531304?text=Hello%20Dr.%20Chandini%20Kotha,%20I%20would%20like%20to%20consult%20regarding%20kidney%20care."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-[#845FA6] bg-white hover:bg-[#F4EEF9] border border-[#E8DFF2] shadow-sm active:scale-95 transition-all"
+                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-xs sm:text-sm font-bold text-[#845FA6] bg-white hover:bg-[#F4EEF9] border-2 border-[#E8DFF2] shadow-sm active:scale-95 transition-all"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-600" />
                 <span>WhatsApp</span>
@@ -232,7 +244,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
               <a
                 href="tel:+919247531304"
-                className="hidden sm:flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-xs sm:text-sm font-semibold text-[#544D5E] bg-white hover:bg-[#F4EEF9] border border-[#E8DFF2] shadow-sm transition-all"
+                className="hidden sm:flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-xs sm:text-sm font-bold text-black bg-white hover:bg-[#F4EEF9] border-2 border-[#E8DFF2] shadow-sm transition-all"
               >
                 <Phone className="w-4 h-4 text-[#845FA6]" />
                 <span>9247531304</span>
@@ -240,27 +252,27 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
 
             {/* Location Notice */}
-            <div className="mt-3 flex items-center gap-2 text-xs text-[#7E768A]">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-              <span>Available for direct in-person consultation in <strong className="text-[#26212E]">Karimnagar, Telangana</strong></span>
+            <div className="mt-3.5 flex items-center gap-2 text-xs sm:text-sm text-black font-semibold">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
+              <span>Available for direct in-person consultation in <strong className="text-black font-extrabold">Karimnagar, Telangana</strong></span>
             </div>
 
             {/* Trust checkmarks in Clean White Cards */}
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm font-medium text-[#26212E] w-full max-w-xl">
-              <div className="flex items-center gap-2.5 bg-white/90 p-2.5 rounded-xl border border-[#E8DFF2] shadow-sm">
-                <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0" />
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm font-bold text-black w-full max-w-xl">
+              <div className="flex items-center gap-2.5 bg-white p-3 rounded-xl border-2 border-[#E8DFF2] shadow-sm">
+                <CheckCircle2 className="w-4.5 h-4.5 text-[#845FA6] shrink-0" />
                 <span>Dedicated 1-on-1 Consultations</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-white/90 p-2.5 rounded-xl border border-[#E8DFF2] shadow-sm">
-                <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0" />
+              <div className="flex items-center gap-2.5 bg-white p-3 rounded-xl border-2 border-[#E8DFF2] shadow-sm">
+                <CheckCircle2 className="w-4.5 h-4.5 text-[#845FA6] shrink-0" />
                 <span>Dual Qualification (DNB Med + DM Nephro)</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-white/90 p-2.5 rounded-xl border border-[#E8DFF2] shadow-sm">
-                <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0" />
+              <div className="flex items-center gap-2.5 bg-white p-3 rounded-xl border-2 border-[#E8DFF2] shadow-sm">
+                <CheckCircle2 className="w-4.5 h-4.5 text-[#845FA6] shrink-0" />
                 <span>Early Creatinine & CKD Stabilization</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-white/90 p-2.5 rounded-xl border border-[#E8DFF2] shadow-sm">
-                <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0" />
+              <div className="flex items-center gap-2.5 bg-white p-3 rounded-xl border-2 border-[#E8DFF2] shadow-sm">
+                <CheckCircle2 className="w-4.5 h-4.5 text-[#845FA6] shrink-0" />
                 <span>Honest Second Opinions on Dialysis</span>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react';
+import { KidneyBackground } from './KidneyBackground';
 
 interface WhenToConsultProps {
   onOpenBooking: () => void;
@@ -34,8 +35,11 @@ export const WhenToConsult: React.FC<WhenToConsultProps> = ({ onOpenBooking }) =
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9] to-[#FAF7FC] relative border-y border-[#E8DFF2]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 sm:py-20 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/50 to-[#FAF7FC] relative overflow-hidden border-y border-[#E8DFF2]">
+      {/* 🫘 Kidney Care & Protection Visual Background */}
+      <KidneyBackground />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E8DFF2] shadow-orvex-card">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -59,10 +63,10 @@ export const WhenToConsult: React.FC<WhenToConsultProps> = ({ onOpenBooking }) =
               <span className="text-xs font-bold uppercase tracking-wider text-[#845FA6] bg-[#F4EEF9] px-3 py-1 rounded-full border border-[#E8DFF2]">
                 Patient Consultation Guide
               </span>
-              <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#26212E] mt-3 leading-snug">
+              <h2 className="text-2xl sm:text-3xl font-serif font-extrabold text-black mt-3 leading-snug">
                 When Should You Consult a Nephrologist?
               </h2>
-              <p className="mt-2 text-xs sm:text-sm text-[#544D5E] leading-relaxed">
+              <p className="mt-2 text-xs sm:text-sm md:text-base text-black font-medium leading-relaxed">
                 Most kidney conditions do not cause bodily pain in their early stages. Waiting for pain or severe weakness often means discovering disease late.
               </p>
 
@@ -96,10 +100,10 @@ export const WhenToConsult: React.FC<WhenToConsultProps> = ({ onOpenBooking }) =
                     <div className="flex items-start gap-2.5">
                       <CheckCircle className="w-4 h-4 text-[#845FA6] shrink-0 mt-0.5" />
                       <div>
-                        <h4 className="text-sm font-bold text-[#26212E] mb-1">
+                        <h4 className="text-sm sm:text-base font-extrabold text-black mb-1">
                           {item.title}
                         </h4>
-                        <p className="text-xs text-[#544D5E] leading-relaxed">
+                        <p className="text-xs sm:text-sm text-black font-medium leading-relaxed">
                           {item.desc}
                         </p>
                       </div>

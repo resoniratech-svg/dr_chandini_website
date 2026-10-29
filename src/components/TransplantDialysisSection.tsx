@@ -1,5 +1,6 @@
 import React from 'react';
 import { HeartHandshake, Shield, HelpCircle, CheckCircle2, Phone, Calendar, ShieldCheck } from 'lucide-react';
+import { KidneyBackground } from './KidneyBackground';
 
 interface TransplantDialysisSectionProps {
   onOpenBooking: () => void;
@@ -7,8 +8,11 @@ interface TransplantDialysisSectionProps {
 
 export const TransplantDialysisSection: React.FC<TransplantDialysisSectionProps> = ({ onOpenBooking }) => {
   return (
-    <section id="transplant" className="py-16 sm:py-24 bg-gradient-to-b from-white via-[#F4EEF9]/30 to-[#FAF7FC] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="transplant" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/40 to-[#FAF7FC] relative overflow-hidden">
+      {/* 🫘 Kidney Care & Protection Visual Background */}
+      <KidneyBackground />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
@@ -16,11 +20,11 @@ export const TransplantDialysisSection: React.FC<TransplantDialysisSectionProps>
             <HeartHandshake className="w-3.5 h-3.5 text-[#845FA6]" />
             Advanced Renal Care
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif text-[#26212E] leading-tight">
-            <span className="font-bold">Renal Transplant &</span> <br />
-            <span className="italic text-[#845FA6]">Honest Dialysis Guidance</span>
+          <h2 className="text-3xl sm:text-4xl font-serif text-black leading-tight">
+            <span className="font-extrabold text-black">Renal Transplant &</span> <br />
+            <span className="italic font-bold text-[#845FA6]">Honest Dialysis Guidance</span>
           </h2>
-          <p className="mt-3 text-base text-[#544D5E]">
+          <p className="mt-3 text-base sm:text-lg text-black font-medium">
             Decisions surrounding advanced kidney care can be overwhelming. Dr. Chandini Kotha provides objective, patient-first counsel, empowering families to make informed, confident choices.
           </p>
         </div>
@@ -105,11 +109,11 @@ export const TransplantDialysisSection: React.FC<TransplantDialysisSectionProps>
                 <Shield className="w-5 h-5 text-[#CCA762]" />
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#26212E] mb-3">
+              <h3 className="text-xl sm:text-2xl font-serif font-extrabold text-black mb-3">
                 Kidney Transplant Evaluation & Post-Op Management
               </h3>
 
-              <p className="text-xs sm:text-sm text-[#544D5E] leading-relaxed mb-5">
+              <p className="text-xs sm:text-sm md:text-base text-black font-medium leading-relaxed mb-5">
                 A kidney transplant offers freedom and improved quality of life for eligible advanced kidney disease patients. As a qualified Renal Transplant Physician, Dr. Chandini guides you through every milestone:
               </p>
 
@@ -117,24 +121,24 @@ export const TransplantDialysisSection: React.FC<TransplantDialysisSectionProps>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0 mt-0.5" />
                   <div>
-                    <h5 className="text-xs sm:text-sm font-bold text-[#26212E]">Pre-Transplant Recipient Workup</h5>
-                    <p className="text-[11px] text-[#7E768A]">Complete cardiovascular, immunological, and organ fitness checks.</p>
+                    <h5 className="text-xs sm:text-sm font-extrabold text-black">Pre-Transplant Recipient Workup</h5>
+                    <p className="text-[11px] sm:text-xs text-black font-medium">Complete cardiovascular, immunological, and organ fitness checks.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0 mt-0.5" />
                   <div>
-                    <h5 className="text-xs sm:text-sm font-bold text-[#26212E]">Donor Evaluation & Compatibility</h5>
-                    <p className="text-[11px] text-[#7E768A]">HLA cross-matching, ethical clearance guidance, and donor safety assessment.</p>
+                    <h5 className="text-xs sm:text-sm font-extrabold text-black">Donor Evaluation & Compatibility</h5>
+                    <p className="text-[11px] sm:text-xs text-black font-medium">HLA cross-matching, ethical clearance guidance, and donor safety assessment.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0 mt-0.5" />
                   <div>
-                    <h5 className="text-xs sm:text-sm font-bold text-[#26212E]">Lifelong Immunosuppressive Monitoring</h5>
-                    <p className="text-[11px] text-[#7E768A]">Fine-tuning anti-rejection medications while minimizing infection risks.</p>
+                    <h5 className="text-xs sm:text-sm font-extrabold text-black">Lifelong Immunosuppressive Monitoring</h5>
+                    <p className="text-[11px] sm:text-xs text-black font-medium">Fine-tuning anti-rejection medications while minimizing infection risks.</p>
                   </div>
                 </div>
               </div>
@@ -174,11 +178,11 @@ export const TransplantDialysisSection: React.FC<TransplantDialysisSectionProps>
                 <HelpCircle className="w-5 h-5 text-[#845FA6]" />
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#26212E] mb-3">
+              <h3 className="text-xl sm:text-2xl font-serif font-extrabold text-black mb-3">
                 Dialysis Evaluation & Second Opinions
               </h3>
 
-              <p className="text-xs sm:text-sm text-[#544D5E] leading-relaxed mb-5">
+              <p className="text-xs sm:text-sm md:text-base text-black font-medium leading-relaxed mb-5">
                 Being told that you or your loved one needs dialysis can be frightening. Dr. Chandini provides unbiased, second opinions to determine whether dialysis is truly indicated or if medical preservation can be continued safely.
               </p>
 
@@ -186,16 +190,16 @@ export const TransplantDialysisSection: React.FC<TransplantDialysisSectionProps>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0 mt-0.5" />
                   <div>
-                    <h5 className="text-xs sm:text-sm font-bold text-[#26212E]">Is Dialysis Immediately Necessary?</h5>
-                    <p className="text-[11px] text-[#7E768A]">Distinguishing reversible Acute Kidney Injury from permanent end-stage disease.</p>
+                    <h5 className="text-xs sm:text-sm font-extrabold text-black">Is Dialysis Immediately Necessary?</h5>
+                    <p className="text-[11px] sm:text-xs text-black font-medium">Distinguishing reversible Acute Kidney Injury from permanent end-stage disease.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#845FA6] shrink-0 mt-0.5" />
                   <div>
-                    <h5 className="text-xs sm:text-sm font-bold text-[#26212E]">Hemodialysis vs. Peritoneal (CAPD)</h5>
-                    <p className="text-[11px] text-[#7E768A]">Selecting the modality that fits the patient’s lifestyle, home setting, and cardiac health.</p>
+                    <h5 className="text-xs sm:text-sm font-extrabold text-black">Hemodialysis vs. Peritoneal (CAPD)</h5>
+                    <p className="text-[11px] sm:text-xs text-black font-medium">Selecting the modality that fits the patient’s lifestyle, home setting, and cardiac health.</p>
                   </div>
                 </div>
 

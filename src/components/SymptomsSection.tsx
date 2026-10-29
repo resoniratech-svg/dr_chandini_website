@@ -1,5 +1,6 @@
 import React from 'react';
 import { AlertCircle, Flame, Droplets, Activity, Clock, ShieldAlert, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { KidneyBackground } from './KidneyBackground';
 
 interface SymptomsSectionProps {
   onOpenBooking: () => void;
@@ -58,8 +59,11 @@ export const SymptomsSection: React.FC<SymptomsSectionProps> = ({ onOpenBooking 
   ];
 
   return (
-    <section id="symptoms" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/50 to-[#FAF7FC] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="symptoms" className="py-16 sm:py-24 bg-gradient-to-b from-[#FAF7FC] via-[#F4EEF9]/50 to-[#FAF7FC] relative overflow-hidden">
+      {/* 🫘 Kidney Care & Protection Visual Background */}
+      <KidneyBackground />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
@@ -67,11 +71,11 @@ export const SymptomsSection: React.FC<SymptomsSectionProps> = ({ onOpenBooking 
             <AlertCircle className="w-3.5 h-3.5 text-[#845FA6]" />
             Early Warning Signs
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#26212E]">
+          <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-black">
             Don't Ignore What Your Body Is Trying to Tell You
           </h2>
-          <p className="mt-3 text-base text-[#544D5E]">
-            Kidney conditions are often called <em className="text-[#845FA6] font-medium">silent illnesses</em> because they can progress without obvious pain. Timely evaluation protects remaining kidney filters.
+          <p className="mt-3 text-base sm:text-lg text-black font-medium">
+            Kidney conditions are often called <em className="text-[#845FA6] font-bold">silent illnesses</em> because they can progress without obvious pain. Timely evaluation protects remaining kidney filters.
           </p>
         </div>
 
@@ -149,18 +153,18 @@ export const SymptomsSection: React.FC<SymptomsSectionProps> = ({ onOpenBooking 
                       </span>
                     </div>
 
-                    <h3 className="text-sm sm:text-base font-bold text-[#26212E] mb-1.5 leading-snug">
+                    <h3 className="text-sm sm:text-base font-extrabold text-black mb-1.5 leading-snug">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-[#544D5E] leading-relaxed">
+                    <p className="text-xs sm:text-sm text-black font-medium leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
 
-                  <div className="mt-4 pt-3 border-t border-[#E8DFF2]/60 text-[11px] font-semibold text-[#845FA6] flex items-center gap-1.5">
+                  <div className="mt-4 pt-3 border-t border-[#E8DFF2]/60 text-[11px] font-bold text-[#845FA6] flex items-center gap-1.5">
                     <span>Clinical indicator</span>
                     <span className="text-[#CCA762]">•</span>
-                    <span className="text-[#7E768A]">Requires KFT & Urine check</span>
+                    <span className="text-black font-semibold">Requires KFT & Urine check</span>
                   </div>
                 </div>
               );
